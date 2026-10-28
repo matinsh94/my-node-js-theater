@@ -1,0 +1,30 @@
+{
+  "name": "theater-reservation-server",
+  "version": "1.0.0",
+  "description": "Theater seat reservation backend (Express + SQLite + Passport sessions + TOTP)",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "nodemon index.mjs",
+    "start": "node index.mjs",
+    "test": "node --test",
+    "totp": "node scripts/totp.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
